@@ -1,0 +1,81 @@
+{
+    "token": "",
+    "commands": [
+        {
+            "name": "add",
+            "description": "活気度を測定するチャンネルを設定します",
+            "options": [
+                {
+                    "type": "CHANNEL",
+                    "name": "scan-channel",
+                    "description": "テキストチャンネルを選択してください",
+                    "required": true
+                },
+                {
+                    "type": "CHANNEL",
+                    "name": "show-channel",
+                    "description": "結果を定期的に出力するチャンネル(未記入で測定するチャンネルへ出力)",
+                    "required": false
+                },
+                {
+                    "type": "NUMBER",
+                    "name": "show-hour",
+                    "description": "0~23 結果を定期的に出力する時間(すべて未記入でOFF)",
+                    "required": false
+                },
+                {
+                    "type": "NUMBER",
+                    "name": "show-minute",
+                    "description": "0~59 結果を定期的に出力するチャンネル(すべて未記入でOFF)",
+                    "required": false
+                },
+                {
+                    "type": "NUMBER",
+                    "name": "show-second",
+                    "description": "0~59 結果を定期的に出力するチャンネル(すべて未記入でOFF)",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "name": "remove",
+            "description": "活気度を測定するチャンネルを削除します",
+            "options": [
+                {
+                    "type": "CHANNEL",
+                    "name": "scan-channel",
+                    "description": "削除したいテキストチャンネルを選択してください",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "name": "show",
+            "description": "現時点での活気度を表示します",
+            "options": [
+                {
+                    "type": "CHANNEL",
+                    "name": "scan-channel",
+                    "description": "表示したいテキストチャンネルを選択してください",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "name": "list",
+            "description": "サーバー内で測定チャンネルに設定されているチャンネルを表示します",
+            "options": [
+                {
+                    "type": "NUMBER",
+                    "name": "page",
+                    "description": "表示するリストのページを入力してください",
+                    "required": false
+                }
+            ]
+        }
+    ],
+    "dataCash": 1,
+    "comment":"dataCashはメモリ上に保存したチャット数を保存する間隔です 狭めすぎると重くなる場合があります",
+    "comment2":"逆に広めすぎるとBOTが落ちた時にデータが保存されていない可能性があります",
+    "debug": true
+}

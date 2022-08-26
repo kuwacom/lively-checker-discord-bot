@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "log4js": "^6.4.4"
+  }
+}
